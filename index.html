@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test task</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=0fb1a5b9-3f8c-490b-98dc-ff131fce64d9&lang=ru_RU"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="#" class="header__link">Каталог</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">О компании</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Магазины</a>
+            </li>
+          </ul>
+        </nav>
+        <img src="images/Logo.svg" alt="logo" class="header__logo" />
+        <div class="header__icons-block">
+          <img src="images/search-icon.svg" alt="" class="header__icon" />
+          <img src="images/man-icon.svg" alt="" class="header__icon" />
+          <div class="header__notice-block">
+            <img src="images/heart-icon.svg" alt="" class="header__icon" />
+            <div class="header__notice">8</div>
+          </div>
+          <div class="header__notice-block">
+            <img src="images/bag-icon.svg" alt="" class="header__icon" />
+            <div class="header__notice">4</div>
+          </div>
+        </div>
+        <div class="" style="display: flex; gap: 40px; align-items: center">
+          <img src="images/bag.svg" alt="" class="header__bag" />
+          <div class="header__burger">
+            <div class="header__burger-line"></div>
+            <div class="header__burger-line2"></div>
+          </div>
+          <div class="header__burger-menu burger-menu">
+            <img
+              src="images/cross-icon.svg"
+              alt=""
+              class="burger-menu__cross"
+            />
+            <ul class="burger-menu__list">
+              <li class="burger-menu__item">Каталог</li>
+              <li class="burger-menu__item">О компании</li>
+              <li class="burger-menu__item">Магазины</li>
+              <li class="burger-menu__item">Аккаунт</li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="line"></div>
+      <p class="path">
+        <a href="#" class="main-link">Главная</a>
+        <span>/</span>
+        <a href="#">Оформление заказа</a>
+      </p>
+      <div class="order">
+        <div class="order__filling-block">
+          <div class="order__heading-block">
+            <h1 class="order__heading">Оформление заказа</h1>
+            <p class="order__enter">
+              <span style="color: #6e6e6e">Есть аккаунт?</span> Войти
+            </p>
+          </div>
+          <h3 class="order__amount">3 товара на сумму 25.000 ₽</h3>
+          <div class="order__product-block product-block">
+            <div class="product-block__img-block">
+              <img
+                src="images/girl_1.png"
+                alt=""
+                class="product-block__image"
+              />
+              <div class="product-block__sides-block">
+                <h4 class="product-block__title">
+                  Утепленная стеганная куртка женская Top Hills
+                </h4>
+                <span><span class="--grey">Артикул</span> 512-05</span>
+                <span><span class="--grey">Сезон</span> Осень-зима</span>
+                <div class="product-block__buttons-block">
+                  <button class="product-block__button">XS</button>
+                  <button class="product-block__button">S</button>
+                  <button class="product-block__button">M</button>
+                  <button class="product-block__button">L</button>
+                  <button class="product-block__button">XL</button>
+                </div>
+                <div class="product-block__colors-block">
+                  <input
+                    class="product-block__circle"
+                    type="radio"
+                    name="choice"
+                    id="radio_1"
+                    checked
+                  />
+                  <label for="radio_1" class="label label-black"></label>
+
+                  <input
+                    class="product-block__circle product-block__circle--blue"
+                    type="radio"
+                    name="choice"
+                    id="radio_2"
+                  />
+                  <label for="radio_2" class="label label-blue"></label>
+
+                  <input
+                    class="product-block__circle product-block__circle--orange"
+                    type="radio"
+                    name="choice"
+                    id="radio_3"
+                  />
+                  <label for="radio_3" class="label label-orange"></label>
+                </div>
+              </div>
+            </div>
+            <div class="product-block__sum-block sum-block">
+              <div class="">
+                <p class="--grey --line-through">12000 ₽</p>
+                <h5>10 000 ₽</h5>
+              </div>
+              <div class="sum-block__btn-block">
+                <button class="sum-block__button minus">-</button>
+                <button class="sum-block__button result">2</button>
+                <button class="sum-block__button plus">+</button>
+              </div>
+              <div class="">
+                <p class="--grey --line-through">24000₽</p>
+                <h5>20 000 ₽</h5>
+              </div>
+              <img
+                src="images/cross-icon.svg"
+                alt=""
+                class="sum-block__cross"
+              />
+            </div>
+          </div>
+          <div class="order__recovery-block">
+            <span class="--grey"
+              >Товар
+              <span style="font-weight: 700">Наименование товара</span> был
+              удален из корзины</span
+            >
+            <span>Восстановить</span>
+            <img src="images/cross-icon.svg" alt="" />
+          </div>
+          <div class="order__product-block product-block product-block--2">
+            <div class="product-block__img-block">
+              <img
+                src="images/girl__2.png"
+                alt=""
+                class="product-block__image"
+              />
+              <div class="product-block__sides-block">
+                <h4 class="product-block__title">Вязанная шапка Zolla</h4>
+                <span><span class="--grey">Артикул </span>891-256</span>
+                <span><span class="--grey">Сезон</span> Демисезон</span>
+                <div class="product-block__buttons-block">
+                  <button class="product-block__button">XS</button>
+                  <button class="product-block__button">S</button>
+                  <button class="product-block__button">M</button>
+                  <button class="product-block__button">L</button>
+                  <button class="product-block__button">XL</button>
+                </div>
+                <div class="product-block__colors-block">
+                  <input
+                    class="product-block__circle"
+                    type="radio"
+                    name="choice2"
+                    id="radio_4"
+                    checked
+                  />
+                  <label for="radio_4" class="label label-black"></label>
+                </div>
+              </div>
+            </div>
+            <div class="product-block__sum-block sum-block">
+              <h5>500 ₽</h5>
+              <div class="sum-block__btn-block">
+                <button class="sum-block__button minus2">-</button>
+                <button class="sum-block__button result2">1</button>
+                <button class="sum-block__button plus2">+</button>
+              </div>
+              <h5>500 ₽</h5>
+              <img
+                src="images/cross-icon.svg"
+                alt=""
+                class="sum-block__cross2"
+              />
+            </div>
+          </div>
+          <h3>Контактные данные</h3>
+          <form action="#" class="order__form form">
+            <div class="form__input-block">
+              <div class="form__column">
+                <input type="text" class="form__input nameIn" placeholder="Имя"  />
+                <input type="tel" class="form__input phoneIn" placeholder="Телефон" />
+              </div>
+
+              <div class="form__column">
+                <input type="text" class="form__input surnameIn"  placeholder="Фамилия" />
+                <input type="email" class="form__input mailIn" placeholder="Email" />
+              </div>
+            </div>
+            <input
+              type="text"
+              class="form__adress"
+              placeholder="Адрес доставки"
+            />
+
+            <h3 class="form__title">Оплата</h3>
+            <div class="">
+              <input type="radio" name="pay" id="pay-cash" checked "/>
+              <label for="pay-cash">Наличными</label>
+            </div>
+            <div class="">
+              <input type="radio" name="pay" id="pay-cart" />
+              <label for="pay-cart">Картой курьеру</label>
+            </div>
+            <div class="">
+              <input type="radio" name="pay" id="pay-online" />
+              <label for="pay-online">Картой онлайн</label>
+            </div>
+            <h3 class="form__title">Комментарий к заказу</h3>
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Комментарий к заказу"
+              class="form__comm-area"
+            ></textarea>
+            <span class="--grey form__use">Использовано 0/140 символов</span>
+          </form>
+        </div>
+
+        <div class="order__result-block result-block">
+          <div class="result-block__card card">
+            <div class="card__option">
+              <span class="card__option--large">Товары</span>
+              <span class="card__option--large">24500 ₽</span>
+            </div>
+            <div class="card__discount-block">
+              <div class="card__option">
+                <span class="card__option--large">Скидка</span>
+                <span class="card__option--large --red">-4500 ₽</span>
+              </div>
+              <div class="card__option "">
+              <span class="card__option--small">Акции</span>
+              <span class="card__option--small --red">-4000 ₽</span>
+            </div>
+            <div class="card__option card__promo">
+              <span class="card__option--small">Промокод</span>
+              <span class="card__option--small --red">-500 ₽</span>
+            </div>
+          </div>
+          <div class="card__option card__delivery">
+            <span class="card__option--large">Доставка</span>
+            <span class="card__option--large">200 ₽</span>
+          </div>
+          <div class="card__product-block">
+            <div class="card__handler-block">
+              <h5 class="card__option--large">Получить товар со склада</h5>
+              <span class="--grey" style="font-size: 12px"
+                >Сроки получения могут измениться</span
+              >
+            </div>
+            <button class="card__switch"></button>
+          </div>
+          <div class="card__option">
+            <h4 class="card__option--title">Итого</h4>
+            <h4 class="card__option--title">20 700 ₽</h4>
+          </div>
+          <input
+            type="text"
+            placeholder="Введите промокод"
+            class="card__input"
+          />
+          <button type="submit" class="card__btn">Оформить заказ</button>
+          <p class="card__confid">
+            Нажимая кнопку “Оформить заказ”, Вы соглашаетесь с политикой
+            конфиденциальности.
+          </p>
+        </div>
+        <div id="map" class="map"></div>
+      </div>
+    </div>
+    <div class="line" style="margin-top: 100px"></div>
+    <footer class="footer">
+      <div class="footer__flex-block">
+        <div class="footer__mail-block">
+          <h5 class="footer__discount">
+            Скидка 10% за подписку на наши новости
+          </h5>
+          <div class="footer__input-block">
+            <input
+              type="text"
+              placeholder="example@mail.ru"
+              class="footer__input"
+            />
+            <img src="images/searchIn.svg" alt="" class="footer__search" />
+            <a class="footer__sub">Подписаться</a>
+            <p class="footer__confid">
+              Нажимая кнопку “Подписаться”, Вы соглашаетесь с политикой
+              конфиденциальности
+            </p>
+          </div>
+        </div>
+        <div class="footer__links-block">
+          <ul class="footer__list">
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Магазины</a></li>
+            <li><a href="#">Новости</a></li>
+          </ul>
+          <ul class="footer__list">
+            <li><a href="#">Оплата и доставка</a></li>
+            <li><a href="#">Условия возврата</a></li>
+            <li><a href="#">Бонусная система</a></li>
+            <li><a href="#">Подарочный сертификат</a></li>
+          </ul>
+          <ul class="footer__list">
+            <li><a href="#">Telegram</a></li>
+            <li><a href="#">WhatsApp</a></li>
+            <li><a href="#">Youtube</a></li>
+            <li><a href="#">VK</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
