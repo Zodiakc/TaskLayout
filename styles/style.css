@@ -142,6 +142,10 @@ h5 {
 .order {
   display: flex;
   gap: 20px; }
+  .order__recover-wrapper {
+    display: flex;
+    gap: 60px;
+    align-items: center; }
   .order__enter {
     margin-bottom: 5px; }
   .order__filling-block {
@@ -158,7 +162,11 @@ h5 {
     align-items: center;
     background-color: #f1f1f1;
     padding: 15.5px 25px;
-    justify-content: space-between; }
+    justify-content: space-between;
+    margin: 25px 0; }
+
+.recover-btn1, .recover-btn2 {
+  cursor: pointer; }
 
 .product-block {
   display: flex;
@@ -551,6 +559,14 @@ h5 {
     .form__input-block {
       flex-direction: column; }
     .form__column {
-      width: 100%; } }
+      width: 100%; }
+
+  .order__recovery-block {
+    flex-direction: column;
+    align-items: flex-start; }
+
+  .order__recover-wrapper {
+    justify-content: space-between;
+    width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */

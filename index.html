@@ -72,141 +72,164 @@
               <span style="color: #6e6e6e">Есть аккаунт?</span> Войти
             </p>
           </div>
-          <h3 class="order__amount">3 товара на сумму 25.000 ₽</h3>
-          <div class="order__product-block product-block">
-            <div class="product-block__img-block">
-              <img
-                src="images/girl_1.png"
-                alt=""
-                class="product-block__image"
-              />
-              <div class="product-block__sides-block">
-                <h4 class="product-block__title">
-                  Утепленная стеганная куртка женская Top Hills
-                </h4>
-                <span><span class="--grey">Артикул</span> 512-05</span>
-                <span><span class="--grey">Сезон</span> Осень-зима</span>
-                <div class="product-block__buttons-block">
-                  <button class="product-block__button">XS</button>
-                  <button class="product-block__button">S</button>
-                  <button class="product-block__button">M</button>
-                  <button class="product-block__button">L</button>
-                  <button class="product-block__button">XL</button>
+          <h3 class="order__amount">
+            <span class="order__count">3</span> товара на сумму 25.000 ₽
+          </h3>
+          <div class="order__wrapper-product">
+            <div class="order__product-block product-block product-block--1"">
+              <div class="product-block__img-block">
+                <img
+                  src="images/girl_1.png"
+                  alt=""
+                  class="product-block__image"
+                />
+                <div class="product-block__sides-block">
+                  <h4 class="product-block__title">
+                    Утепленная стеганная куртка женская Top Hills
+                  </h4>
+                  <span><span class="--grey">Артикул</span> 512-05</span>
+                  <span><span class="--grey">Сезон</span> Осень-зима</span>
+                  <div class="product-block__buttons-block">
+                    <button class="product-block__button">XS</button>
+                    <button class="product-block__button">S</button>
+                    <button class="product-block__button">M</button>
+                    <button class="product-block__button">L</button>
+                    <button class="product-block__button">XL</button>
+                  </div>
+                  <div class="product-block__colors-block">
+                    <input
+                      class="product-block__circle"
+                      type="radio"
+                      name="choice"
+                      id="radio_1"
+                      checked
+                    />
+                    <label for="radio_1" class="label label-black"></label>
+  
+                    <input
+                      class="product-block__circle product-block__circle--blue"
+                      type="radio"
+                      name="choice"
+                      id="radio_2"
+                    />
+                    <label for="radio_2" class="label label-blue"></label>
+  
+                    <input
+                      class="product-block__circle product-block__circle--orange"
+                      type="radio"
+                      name="choice"
+                      id="radio_3"
+                    />
+                    <label for="radio_3" class="label label-orange"></label>
+                  </div>
                 </div>
-                <div class="product-block__colors-block">
-                  <input
-                    class="product-block__circle"
-                    type="radio"
-                    name="choice"
-                    id="radio_1"
-                    checked
-                  />
-                  <label for="radio_1" class="label label-black"></label>
-
-                  <input
-                    class="product-block__circle product-block__circle--blue"
-                    type="radio"
-                    name="choice"
-                    id="radio_2"
-                  />
-                  <label for="radio_2" class="label label-blue"></label>
-
-                  <input
-                    class="product-block__circle product-block__circle--orange"
-                    type="radio"
-                    name="choice"
-                    id="radio_3"
-                  />
-                  <label for="radio_3" class="label label-orange"></label>
+              </div>
+              <div class="product-block__sum-block sum-block">
+                <div class="">
+                  <p class="--grey --line-through">12000 ₽</p>
+                  <h5>10 000 ₽</h5>
                 </div>
+                <div class="sum-block__btn-block">
+                  <button class="sum-block__button minus">-</button>
+                  <button class="sum-block__button result">2</button>
+                  <button class="sum-block__button plus">+</button>
+                </div>
+                <div class="">
+                  <p class="--grey --line-through">24000₽</p>
+                  <h5>20 000 ₽</h5>
+                </div>
+                <img
+                  src="images/cross-icon.svg"
+                  alt=""
+                  class="sum-block__cross"
+                />
               </div>
             </div>
-            <div class="product-block__sum-block sum-block">
-              <div class="">
-                <p class="--grey --line-through">12000 ₽</p>
-                <h5>10 000 ₽</h5>
-              </div>
-              <div class="sum-block__btn-block">
-                <button class="sum-block__button minus">-</button>
-                <button class="sum-block__button result">2</button>
-                <button class="sum-block__button plus">+</button>
-              </div>
-              <div class="">
-                <p class="--grey --line-through">24000₽</p>
-                <h5>20 000 ₽</h5>
-              </div>
-              <img
-                src="images/cross-icon.svg"
-                alt=""
-                class="sum-block__cross"
-              />
+            <div class="order__recovery-block">
+              <span class="--grey"
+                >Товар
+                <span style="font-weight: 700">Наименование товара</span> был
+                удален из корзины</span
+              >
+             <div class="order__recover-wrapper">
+              <span class="recover-btn3">Восстановить</span>
+              <img src="images/cross-icon.svg" alt="" />
+             </div>
             </div>
-          </div>
-          <div class="order__recovery-block">
-            <span class="--grey"
-              >Товар
-              <span style="font-weight: 700">Наименование товара</span> был
-              удален из корзины</span
-            >
-            <span>Восстановить</span>
-            <img src="images/cross-icon.svg" alt="" />
-          </div>
-          <div class="order__product-block product-block product-block--2">
-            <div class="product-block__img-block">
-              <img
-                src="images/girl__2.png"
-                alt=""
-                class="product-block__image"
-              />
-              <div class="product-block__sides-block">
-                <h4 class="product-block__title">Вязанная шапка Zolla</h4>
-                <span><span class="--grey">Артикул </span>891-256</span>
-                <span><span class="--grey">Сезон</span> Демисезон</span>
-                <div class="product-block__buttons-block">
-                  <button class="product-block__button">XS</button>
-                  <button class="product-block__button">S</button>
-                  <button class="product-block__button">M</button>
-                  <button class="product-block__button">L</button>
-                  <button class="product-block__button">XL</button>
-                </div>
-                <div class="product-block__colors-block">
-                  <input
-                    class="product-block__circle"
-                    type="radio"
-                    name="choice2"
-                    id="radio_4"
-                    checked
-                  />
-                  <label for="radio_4" class="label label-black"></label>
+            <div class="order__product-block product-block product-block--2">
+              <div class="product-block__img-block">
+                <img
+                  src="images/girl__2.png"
+                  alt=""
+                  class="product-block__image"
+                />
+                <div class="product-block__sides-block">
+                  <h4 class="product-block__title">Вязанная шапка Zolla</h4>
+                  <span><span class="--grey">Артикул </span>891-256</span>
+                  <span><span class="--grey">Сезон</span> Демисезон</span>
+                  <div class="product-block__buttons-block">
+                    <button class="product-block__button">XS</button>
+                    <button class="product-block__button">S</button>
+                    <button class="product-block__button">M</button>
+                    <button class="product-block__button">L</button>
+                    <button class="product-block__button">XL</button>
+                  </div>
+                  <div class="product-block__colors-block">
+                    <input
+                      class="product-block__circle"
+                      type="radio"
+                      name="choice2"
+                      id="radio_4"
+                      checked
+                    />
+                    <label for="radio_4" class="label label-black"></label>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="product-block__sum-block sum-block">
-              <h5>500 ₽</h5>
-              <div class="sum-block__btn-block">
-                <button class="sum-block__button minus2">-</button>
-                <button class="sum-block__button result2">1</button>
-                <button class="sum-block__button plus2">+</button>
+              <div class="product-block__sum-block sum-block">
+                <h5>500 ₽</h5>
+                <div class="sum-block__btn-block">
+                  <button class="sum-block__button minus2">-</button>
+                  <button class="sum-block__button result2">1</button>
+                  <button class="sum-block__button plus2">+</button>
+                </div>
+                <h5>500 ₽</h5>
+                <img
+                  src="images/cross-icon.svg"
+                  alt=""
+                  class="sum-block__cross2"
+                />
               </div>
-              <h5>500 ₽</h5>
-              <img
-                src="images/cross-icon.svg"
-                alt=""
-                class="sum-block__cross2"
-              />
             </div>
           </div>
           <h3>Контактные данные</h3>
           <form action="#" class="order__form form">
             <div class="form__input-block">
               <div class="form__column">
-                <input type="text" class="form__input nameIn" placeholder="Имя"  />
-                <input type="tel" class="form__input phoneIn" placeholder="Телефон" />
+                <input
+                  type="text"
+                  class="form__input"
+                  placeholder="Имя"
+                  id="nameIn"
+                />
+                <input
+                  type="text"
+                  class="form__input phoneIn"
+                  placeholder="Телефон"
+                />
               </div>
 
               <div class="form__column">
-                <input type="text" class="form__input surnameIn"  placeholder="Фамилия" />
-                <input type="email" class="form__input mailIn" placeholder="Email" />
+                <input
+                  type="text"
+                  class="form__input surnameIn"
+                  placeholder="Фамилия"
+                />
+                <input
+                  type="email"
+                  class="form__input mailIn"
+                  placeholder="Email"
+                />
               </div>
             </div>
             <input
@@ -217,15 +240,26 @@
 
             <h3 class="form__title">Оплата</h3>
             <div class="">
-              <input type="radio" name="pay" id="pay-cash" checked "/>
+              <input
+                type="radio"
+                name="pay"
+                id="pay-cash"
+                checked
+                class="pay-radio"
+              />
               <label for="pay-cash">Наличными</label>
             </div>
             <div class="">
-              <input type="radio" name="pay" id="pay-cart" />
+              <input type="radio" name="pay" id="pay-cart" class="pay-radio" />
               <label for="pay-cart">Картой курьеру</label>
             </div>
             <div class="">
-              <input type="radio" name="pay" id="pay-online" />
+              <input
+                type="radio"
+                name="pay"
+                id="pay-online"
+                class="pay-radio"
+              />
               <label for="pay-online">Картой онлайн</label>
             </div>
             <h3 class="form__title">Комментарий к заказу</h3>
@@ -276,12 +310,12 @@
           </div>
           <div class="card__option">
             <h4 class="card__option--title">Итого</h4>
-            <h4 class="card__option--title">20 700 ₽</h4>
+            <h4 class="card__option--title allSum">20 700 ₽</h4>
           </div>
           <input
             type="text"
             placeholder="Введите промокод"
-            class="card__input"
+            class="card__input promoIn"
           />
           <button type="submit" class="card__btn">Оформить заказ</button>
           <p class="card__confid">

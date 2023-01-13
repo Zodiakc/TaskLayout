@@ -39,9 +39,10 @@ const switchBtn = document.querySelector(".card__switch");
 
 const crossSum = document.querySelector(".sum-block__cross");
 const crossSum2 = document.querySelector(".sum-block__cross2");
-const productBlock = document.querySelector(".product-block"),
+const productBlock = document.querySelector(".product-block--1"),
   productBlock2 = document.querySelector(".product-block--2");
-
+const fillingBlock = document.querySelector(".order__filling-block");
+const wrapperProduct = document.querySelector(".order__wrapper-product");
 const formInputs = document.querySelectorAll(".form__input"),
   form = document.querySelector(".form");
 formAdress = document.querySelector(".form__adress");
@@ -73,53 +74,125 @@ minus2.addEventListener("click", () => minusRes(res2));
 plus2.addEventListener("click", () => plusRes(res2));
 
 crossSum.addEventListener("click", () => {
-  productBlock.style = "display:none";
+  productBlock.style = "display: block";
+  productBlock.innerHTML = `
+  <div class="order__recovery-block">
+   <span class="--grey"
+              >Товар
+              <span style="font-weight: 700">Наименование товара</span> был
+              удален из корзины</span
+            >
+            <span class="recover-btn1">Восстановить</span>
+  <img src="images/cross-icon.svg" alt="" />
+  </div>
+`;
 });
 crossSum2.addEventListener("click", () => {
-  productBlock2.style = "display:none";
+  productBlock2.style = "display: block";
+  productBlock2.innerHTML = `
+  <div class="order__recovery-block">
+   <span class="--grey"
+              >Товар
+              <span style="font-weight: 700">Наименование товара</span> был
+              удален из корзины</span
+            >
+            <span class="recover-btn2">Восстановить</span>
+  <img src="images/cross-icon.svg" alt="" />
+  </div>
+`;
 });
+
 switchBtn.addEventListener("click", () => {
   switchBtn.classList.toggle("card__switch-in");
 });
 //////////Создание formData//////////////
-const orderAmount = document.querySelector(".order__amount").innerHTML;
-const nameIn = document.querySelector(".nameIn").value
-const surnameIn =   document.querySelector(".surnameIn").value
-const mailIn = document.querySelector(".mailIn").value
-const phoneIn =   document.querySelector(".phone").value
 
-function FormData(title, name, surname, phone, mail, adress, comment) {
-  this.title = title;
+const nameIn = document.getElementById("nameIn");
+const surnameIn = document.querySelector(".surnameIn");
+const mailIn = document.querySelector(".mailIn");
+const phoneIn = document.querySelector(".phoneIn");
+const commIn = document.querySelector(".form__comm-area");
+const promoIn = document.querySelector(".promoIn");
+const allSum = document.querySelector(".allSum").innerHTML;
+const orderCount = document.querySelector(".order__count");
+const orderTitles = document.querySelectorAll(".product-block__title");
+
+orderCount.style = "font-size: 28px";
+
+const sumBlockBtns = document
+  .querySelectorAll(".sum-block__button")
+  .forEach((e) =>
+    e.addEventListener(
+      "click",
+      () =>
+        (orderCount.innerHTML = Number(res.innerHTML) + Number(res2.innerHTML))
+    )
+  );
+
+let checked = document.querySelectorAll(".pay-radio");
+let payIn;
+
+function FormData(
+  count,
+  name,
+  surname,
+  mail,
+  phone,
+  comm,
+  pay,
+  promo,
+  sum,
+  orderTitle
+) {
+  this.count = count;
   this.name = name;
   this.surname = surname;
-  this.phone = phone;
   this.mail = mail;
- 
-
+  this.phone = phone;
+  this.comm = comm;
+  this.pay = pay;
+  this.promo = promo;
+  this.sum = sum;
+  this.orderTitle = orderTitle;
 }
+let orderTitle;
+cardBtn.onclick = function sayData() {
+  for (let i = 0; i < checked.length; i++) {
+    if (checked[i].checked) {
+      payIn = checked[i].id;
+      break;
+    }
+  }
+  for (let i = 0; i < orderTitles.length; i++) {
+    orderTitle = orderTitles[i].innerHTML;
+  }
 
-const formData = new FormData(
-  orderAmount,
-  nameIn,
-  surnameIn,
-  phoneIn,
-  mailIn
- 
-  
-);
-
-cardBtn.addEventListener("click", () => {
+  const formData = new FormData(
+    orderCount.innerHTML,
+    nameIn.value,
+    surnameIn.value,
+    mailIn.value,
+    phoneIn.value,
+    commIn.value,
+    payIn,
+    promoIn.value,
+    allSum,
+    orderTitle
+  );
   formInputs.forEach((input) => {
     if (input.value) {
       input.style = "border-color: #c8c8c8";
+      input.value = "";
     } else {
       input.style = "border-color: red";
+      input.placeholder = " Заполните поле...";
     }
   });
   if (formAdress.value) {
     formAdress.style = "border-color: #c8c8c8";
+    formAdress.value = "";
   } else {
     formAdress.style = "border-color: red";
   }
   console.log(formData);
-});
+};

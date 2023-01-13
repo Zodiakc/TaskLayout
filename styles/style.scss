@@ -158,7 +158,11 @@ h5 {
 .order {
   display: flex;
   gap: 20px;
-
+  &__recover-wrapper{
+    display: flex;
+    gap: 60px;
+    align-items: center;
+  }
   &__enter {
     margin-bottom: 5px;
   }
@@ -179,9 +183,12 @@ h5 {
     background-color: #f1f1f1;
     padding: 15.5px 25px;
     justify-content: space-between;
+    margin: 25px 0;
   }
 }
-
+.recover-btn1, .recover-btn2{
+  cursor: pointer;
+}
 .product-block {
   display: flex;
   border-bottom: 0.5px solid #c8c8c8;
@@ -662,5 +669,16 @@ h5 {
     &__column {
       width: 100%;
     }
+  }
+  .order__recovery-block{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .order__recover-wrapper{
+    justify-content: space-between;
+    width: 100%;
+  }
+  .recover-btn1, .recover-btn2, .recover-btn3{
+    
   }
 }
