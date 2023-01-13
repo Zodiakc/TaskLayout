@@ -165,7 +165,8 @@ h5 {
     justify-content: space-between;
     margin: 25px 0; }
 
-.recover-btn1, .recover-btn2 {
+.recover-btn1,
+.recover-btn2 {
   cursor: pointer; }
 
 .product-block {

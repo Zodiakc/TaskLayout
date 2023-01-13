@@ -126,7 +126,7 @@ h5 {
   top: 0;
   right: 0;
   background-color: #999999;
- 
+
   &__list {
     display: flex;
     gap: 25px;
@@ -142,7 +142,7 @@ h5 {
     padding: 20px 80px;
     transition: 0.3s;
     color: #f1f1f1;
-    &:hover{
+    &:hover {
       background-color: #6e6e6e;
       cursor: pointer;
       transition: 0.3s;
@@ -158,7 +158,7 @@ h5 {
 .order {
   display: flex;
   gap: 20px;
-  &__recover-wrapper{
+  &__recover-wrapper {
     display: flex;
     gap: 60px;
     align-items: center;
@@ -186,7 +186,8 @@ h5 {
     margin: 25px 0;
   }
 }
-.recover-btn1, .recover-btn2{
+.recover-btn1,
+.recover-btn2 {
   cursor: pointer;
 }
 .product-block {
@@ -286,7 +287,8 @@ h5 {
   display: flex;
   align-items: flex-start;
   gap: 20px;
-  &__cross, &__cross2{
+  &__cross,
+  &__cross2 {
     cursor: pointer;
   }
   & > h5 {
@@ -462,7 +464,7 @@ h5 {
       z-index: 1;
     }
   }
-  &__switch-in{
+  &__switch-in {
     &::after {
       content: "";
       height: 22px;
@@ -572,7 +574,6 @@ h5 {
   display: none !important;
 }
 
-
 ////////////////adaptive//////////////////
 
 @media (max-width: 1395px) {
@@ -670,15 +671,12 @@ h5 {
       width: 100%;
     }
   }
-  .order__recovery-block{
+  .order__recovery-block {
     flex-direction: column;
     align-items: flex-start;
   }
-  .order__recover-wrapper{
+  .order__recover-wrapper {
     justify-content: space-between;
     width: 100%;
-  }
-  .recover-btn1, .recover-btn2, .recover-btn3{
-    
   }
 }
