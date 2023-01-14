@@ -128,9 +128,19 @@ const sumBlockBtns = document
         (orderCount.innerHTML = Number(res.innerHTML) + Number(res2.innerHTML))
     )
   );
-
+const formAdressWrapper = document.querySelector(".form__adress--wrapper");
 let checked = document.querySelectorAll(".pay-radio");
 let payIn;
+let formTitle = document.createElement("div");
+formTitle.style =
+  "position: absolute; top: 10px; left: 10px;  background-color: white; z-index:20; text-align: center; font-size: 12px; line-height: 15px; color: #6E6E6E; padding:0px 10px";
+formTitle.innerText = "Адрес доставки";
+formAdress.oninput = function () {
+  formAdressWrapper.appendChild(formTitle);
+};
+formAdress.onblur = function () {
+  formAdressWrapper.removeChild(formTitle);
+};
 
 function FormData(
   count,
@@ -156,6 +166,7 @@ function FormData(
   this.orderTitle = orderTitle;
 }
 let orderTitle;
+
 cardBtn.onclick = function sayData() {
   for (let i = 0; i < checked.length; i++) {
     if (checked[i].checked) {
